@@ -1,13 +1,17 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/**
- *
- * @author lifm1
- */
-public class NumeroMayor {
-    
+import java.util.*;
+public class NumeroMayor 
+{
+    public static void main(String args[])
+    {
+        Scanner scan = new Scanner(System.in);
+        double a, b;
+        System.out.print("Teclee un numero");
+        a = scan.nextDouble();
+        System.out.print("Teclee otro numero");
+        b = scan.nextDouble();
+        if(a > b)
+            System.out.print(a + " es mayor que " + b);
+        else
+            System.out.print(b + " es mayor que " + a);
+    }
 }
