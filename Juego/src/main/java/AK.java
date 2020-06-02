@@ -8,9 +8,22 @@ public class AK
     int daño;
     double velocidadDisparo;
     
-    public void disparar()
+    public AK(String tipo, int cargador, int precision, double velocidadCarga, double precio, int daño, double velocidadDisparo)
     {
-        System.out.println("Te estoy disparando con un daño de: "); 
+        this.tipo = tipo;
+        this.cargador = cargador;
+        this.precision = precision;
+        this.velocidadCarga = velocidadCarga;
+        this.precio = precio;
+        this.daño = daño;
+        this.velocidadDisparo = velocidadDisparo;
+    }
+    
+    public AK(){}  
+    
+    public String disparar()
+    {
+        return "Te estoy disparando con un daño de: " + daño + " puntos"; 
     }
     public void apuntar()
     {

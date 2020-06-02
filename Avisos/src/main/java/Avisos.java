@@ -28,7 +28,7 @@ public class Avisos
         return "Avisos:" + "\nid: " + id + "\nTipo de aviso: " + tipoAviso + "\nTítulo: " + titulo 
                 + "\nAutor: " + autor + "\nTexto: " + texto + "\nResumen: " + resumen 
                 + "\nFecha de publicación: " + fechaP + "\nFecha alta: " + fechaA 
-                + "\nFecha finalización: " + fechaF + "\nEstatus: =" + estatus + '}';
+                + "\nFecha finalización: " + fechaF + "\nEstatus: " + estatus;
     }
     
     
