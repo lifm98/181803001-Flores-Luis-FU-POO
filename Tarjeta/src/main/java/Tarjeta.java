@@ -24,23 +24,34 @@ public class Tarjeta
         
         
     }
-    
-    public void verificarCuenta(int nCuenta, int NIP)
+
+    public Tarjeta verificarCuenta(int nCuenta, int NIP)
     {
         if(nCuenta == 123123 && NIP == 1133)
         {
-            System.out.println("Eres la cuenta de Eduardo Díaz Flores");
-            Tarjeta Eduardo = new Tarjeta(123123, 1133, "Eduardo Díaz Flores",31,12,2032, 543, 45987.22, 550);
-            System.out.println(Eduardo.toString());
+            return new Tarjeta(123123, 1133, "Eduardo Díaz Flores",31,12,2032, 543, 45987.22, 550);
         }
         else if(nCuenta == 456789 && NIP == 3367)
-        {
-            System.out.println("Eres la cuenta de Kevin Mesa González");
-            Tarjeta Kevin = new Tarjeta(456789, 3367, "Kevin Mesa González",31,12,2032, 544, 360, 5322.23);
-            System.out.println(Kevin.toString());
+        {    
+            return new Tarjeta(456789, 3367, "Kevin Meza González",31,12,2032, 544, 360, 5322.23);
         }
         else
-            System.out.println("El cliente no existe");
+            return new Tarjeta() ;
+    }
+    
+    public void Deposito(double monto)
+    {
+        this.monto += monto;
+    }
+    
+    public void Retiro(double monto)
+    {
+        this.monto -= monto;
+    }
+    
+    public void EliminarApartado()
+    {
+        apartado -= apartado;
     }
     
     public double Total()
